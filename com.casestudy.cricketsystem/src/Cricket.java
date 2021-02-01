@@ -6,7 +6,6 @@ public class Cricket {
 	public List<Team> teams = new ArrayList<Team>();
 	public List<Match> match = new ArrayList<Match>();
 
-	// Verifying Team
 	public boolean verifyTeam(String teamName) {
 		boolean flag = false;
 		for (Team team : teams) {
@@ -17,7 +16,6 @@ public class Cricket {
 		return flag;
 	}
 
-	// Sorting Teams by Name
 	public void totalTeamsByName() {
 		System.out.println("There are " + teams.size() + " teams in our system.");
 		
@@ -27,7 +25,6 @@ public class Cricket {
 		}
 	}
 
-	// Sorting Teams by Date
 	public void totalTeamsByDate() {
 		System.out.println("There are " + teams.size() + " teams in our system.");
 
@@ -37,7 +34,6 @@ public class Cricket {
 		}
 	}
 
-	// Searching Team
 	public void searchTeam(String teamName) {
 		System.out.println(teamName);
 		for (Team team : teams) {
@@ -51,7 +47,6 @@ public class Cricket {
 		}
 	}
 
-	// Displaying matches
 	public void showGames() {
 		for (Match matches : match) {
 			System.out.println("Match: " + matches.getGame());

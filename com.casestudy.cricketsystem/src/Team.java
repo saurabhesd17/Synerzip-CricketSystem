@@ -21,7 +21,6 @@ public class Team {
 		this.dateOfCreation = date;
 	}
 
-	// Creating Player
 	public void createTeam(Cricket cricket) throws IOException {
 		InputStreamReader in = new InputStreamReader(System.in);
 		BufferedReader get = new BufferedReader(in);
@@ -33,7 +32,6 @@ public class Team {
 		dateOfCreation = new Date();
 	}
 
-	// Displaying total number of players in inputed team name
 	public void playersInTeam(String teamName) {
 		int count = 0;
 		for (Player player : players) {
@@ -45,11 +43,6 @@ public class Team {
 		System.out.println("There are " + count + " players are in team currently");
 	}
 
-	/**
-	 * 
-	 * @param teamName
-	 *	Displaying players in a inputed team name
-	 */
 	public void showTeamPlayers(String teamName) {
 		for (Player player : players) {
 			if (teamName.equals(player.getPlayFor())) {
@@ -62,7 +55,6 @@ public class Team {
 		}
 	}
 
-	// Searching Player
 	public void searchPlayer(String playerName) {
 		for (Player player : players) {
 			if (playerName.equals(player.getName())) {
@@ -73,7 +65,6 @@ public class Team {
 		}
 	}
 
-	// Adding player to inputed team name
 	public void addPlayerToTeam(String playerName, Cricket cricket) throws IOException {
 		InputStreamReader in = new InputStreamReader(System.in);
 		BufferedReader get = new BufferedReader(in);
@@ -88,7 +79,6 @@ public class Team {
 		}
 	}
 
-	// Removing player from inputed team name
 	public void removePlayerFromTeam(String playerName) {
 		for (Player player : players) {
 			if (player.getName().equals(playerName)) {
@@ -100,7 +90,6 @@ public class Team {
 		}
 	}
 
-	// Displaying Team Details
 	public void showTeamDetails() {
 		System.out.println(name);
 		System.out.println(homeground);
